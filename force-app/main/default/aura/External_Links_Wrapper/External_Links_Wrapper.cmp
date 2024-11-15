@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable, flexipage:availableForAllPageTypes, lightning:isUrlAddressable" access="global">
+    <!-- Workspace API for handling console tabs -->
+    <lightning:workspaceAPI aura:id="workspace" />
+
+    <!-- Include the LWC component -->
+    <c:utilityBarLinkComponent aura:id="lwcUtilityBarComp" />
+</aura:component>
+

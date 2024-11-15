@@ -1,0 +1,18 @@
+<template>
+    <template if:true={utilityBarLinks}>
+        <template for:each={utilityBarLinks} for:item="link">
+            <div key={link.Id} class="button-container">
+                <button 
+                    class="slds-button slds-button_neutral full-width-button"
+                    data-url={link.Link_URL__c}
+                    data-opentab={link.Open_In_Console_Tab__c}
+                    onclick={openLink}>
+                    {link.MasterLabel}
+                </button>
+            </div>
+        </template>
+    </template>
+    <template if:false={utilityBarLinks}>
+        <p>No links available.</p>
+    </template>
+</template>

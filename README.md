@@ -42,10 +42,10 @@ The **UtilityBarExternalLinkTab** project enhances Salesforce's utility bar by i
 Here’s a preview of the Utility Bar in action:
 
 ### **1. Utility Bar with External Links**
-![Utility Bar Preview](force-app/screenshots/utility-bar-preview.png)
+![Utility Bar Preview](force-app/screenshots/UtilityBar.png)
 
-### **2. Metadata Configuration Example**
-![Metadata Configuration](force-app/screenshots/metadata-configuration.png)
+### **2. Utility Bar with External Links Open**
+![Metadata Configuration](force-app/screenshots/UtilityBarOpen.png)
 
 ---
 

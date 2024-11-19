@@ -1,18 +1,55 @@
-# Salesforce DX Project: Next Steps
+# UtilityBarExternalLinkTab
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Overview
+The **UtilityBarExternalLinkTab** project enhances Salesforce's utility bar by introducing a tab for external links. It uses Aura components, LWC, and custom metadata to provide a flexible and dynamic solution for users to access external resources directly from Salesforce.
 
-## How Do You Plan to Deploy Your Changes?
+---
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Key Features
+- 📌 **Custom Metadata**: Configure links dynamically without hardcoding.
+- ⚡ **Aura and LWC Integration**: Reusable components for seamless utility bar functionality.
+- 🌐 **Visualforce Support**: Backward compatibility with Salesforce Classic.
 
-## Configure Your Salesforce DX Project
+---
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Components
+1. **Aura Components**
+   - `External_Links_Wrapper.cmp`: Renders external links dynamically.
+   - Supporting files: `Controller`, `Renderer`, and metadata XML.
 
-## Read All About It
+2. **LWC**
+   - `utilityBarLinkComponent`: A Lightning Web Component for improved styling and interactivity.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+3. **Visualforce Page**
+   - `ExternalLinkWrapperVF.page`: Provides fallback support for external links.
+
+4. **Custom Metadata**
+   - Configure external links with labels, URLs, and additional options.
+
+---
+
+## How It Works
+1. **Custom Metadata Setup**:
+   - Admins create external link records using custom metadata types.
+2. **Dynamic Rendering**:
+   - Components fetch and display links dynamically based on metadata.
+3. **Utility Bar Integration**:
+   - Add the components to the utility bar for easy access.
+
+---
+
+## Screenshots
+Here’s a preview of the Utility Bar in action:
+
+### **1. Utility Bar with External Links**
+![Utility Bar Preview](force-app/screenshots/UtilityBar.png)
+
+### **2. Utility Bar with External Links Open**
+![Metadata Configuration](force-app/screenshots/UtilityBarOpen.png)
+
+---
+
+## Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/barx2os/UtilityBarExternalLinkTab.git
